@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon FNSKU Sheet Print"
+  short_description: "Parse sheets, count PDFs, print labels."
+  default_prompt: "Use $amazon-fnsku-sheet-print to read a shipment spreadsheet, extract SKU and quantity from columns A and H, download Amazon FNSKU labels with the companion skill, count the newest batch PDFs, and print them at 100% scale."
