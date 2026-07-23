@@ -1,0 +1,4 @@
+interface:
+  display_name: "Download Amazon FNSKU Labels"
+  short_description: "Download FNSKU labels from Seller Central"
+  default_prompt: "Use $amazon-download-fnsku-labels to download FNSKU labels for my SKU list."
