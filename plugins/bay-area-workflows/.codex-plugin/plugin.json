@@ -1,18 +1,18 @@
 {
   "name": "bay-area-workflows",
   "version": "0.1.0",
-  "description": "Bay Area Workflows plugin",
+  "description": "Shared Codex workflows for Bay Area Import operations.",
   "author": {
-    "name": "Local developer"
+    "name": "Bay Area Import"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Bay Area Workflows",
-    "shortDescription": "Use Bay Area Workflows in Codex.",
-    "longDescription": "Bay Area Workflows adds a local Codex plugin scaffold.",
-    "developerName": "Local developer",
+    "shortDescription": "Shared skills for Bay Area Import team workflows.",
+    "longDescription": "Bay Area Workflows packages shared Codex skills for recurring Bay Area Import tasks such as Amazon and catalog operations.",
+    "developerName": "Bay Area Import",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": "Help me use Bay Area Workflows."
+    "defaultPrompt": "Help me with a Bay Area Import workflow."
   }
 }

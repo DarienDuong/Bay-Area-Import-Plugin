@@ -19,15 +19,14 @@ Add shared Codex skills under:
 plugins/bay-area-workflows/skills/<skill-name>/SKILL.md
 ```
 
-## Install Locally
+## Install In Codex
 
-From this repo root:
+From this repo root on each machine:
 
 ```bash
 codex plugin marketplace add "$(pwd)"
+codex plugin add bay-area-workflows@personal
 ```
-
-Then open Codex, find `bay-area-workflows` in Plugins, and install it.
 
 ## Update
 
@@ -37,12 +36,65 @@ Pull the latest repo changes:
 git pull
 ```
 
-Then refresh or reinstall `bay-area-workflows` in Codex so the updated plugin content is picked up.
+Then refresh the installed plugin:
+
+```bash
+codex plugin add bay-area-workflows@personal
+```
+
+## Team Setup
+
+Clone the repo:
+
+```bash
+git clone https://github.com/DarienDuong/Bay-Area-Import-Plugin.git
+cd Bay-Area-Import-Plugin
+```
+
+Then install the plugin in Codex:
+
+```bash
+codex plugin marketplace add "$(pwd)"
+codex plugin add bay-area-workflows@personal
+```
+
+## Add A Skill
+
+Create a folder for the skill:
+
+```text
+plugins/bay-area-workflows/skills/<skill-name>/
+```
+
+Required file:
+
+```text
+plugins/bay-area-workflows/skills/<skill-name>/SKILL.md
+```
+
+Optional supporting files:
+
+```text
+agents/
+scripts/
+assets/
+references/
+```
 
 ## Validate
 
 ```bash
 python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py plugins/bay-area-workflows
+```
+
+## Release Workflow
+
+After making changes:
+
+```bash
+git add .
+git commit -m "Describe the workflow change"
+git push
 ```
 
 ## Team Notes
